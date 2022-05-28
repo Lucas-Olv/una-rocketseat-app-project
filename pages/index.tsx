@@ -4,7 +4,6 @@ import Head from 'next/head';
 import styles from '../styles/Home.module.scss';
 import fundo from '../src/images/fundo.png';
 import logo from '../src/images/logo.png';
-import createAccount from './createAccount';
 
 const Home: NextPage = () => {
 
@@ -25,7 +24,7 @@ const Home: NextPage = () => {
           <h1 className={styles.imageWrapper_title}>rocketseat</h1>
         </div>
 
-        <button className={styles.button} onClick={() => {router.push('createAccount')}}>
+        <button className={styles.button} onClick={() => router.push('login')}>
           <strong className={styles.button_title}>EMBARCAR NO FOGUETE</strong>
           <i className={`${styles.button_icon} + bi bi-arrow-right`}></i>
         </button>

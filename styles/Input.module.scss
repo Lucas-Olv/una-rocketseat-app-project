@@ -1,0 +1,29 @@
+.input {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  label {
+    position: absolute;
+    left: 8vw;
+    color: #7F57D8;
+    font-size: 1.6rem;
+  }
+
+  input {
+    color: white;
+    font-size: 1rem;
+    height: 6vh;
+    background-color: #121214;
+    border: none;
+    border-radius: 6px;
+    padding-left:14vw;
+    
+    &::placeholder {
+      color: white;
+      font-size: 1.2rem;
+    }
+  }
+
+}
