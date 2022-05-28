@@ -1,6 +1,7 @@
 import type { NextPage } from 'next';
 import { useRouter } from 'next/router';
 import Head from 'next/head';
+import Link from 'next/link';
 import { Input } from '../src/components/Input';
 import { Button } from '../src/components/Button';
 import styles from '../styles/Login.module.scss'
@@ -29,7 +30,7 @@ const Login: NextPage = () => {
           <Input type="password" icon="bi bi-lock-fill" placeholder='Digite sua senha' required />
           <strong className={styles.form_forgotPassword} onClick={() => router.push("forgotPassword")}>Esqueci minha senha</strong>
           <Button>ENTRAR</Button>
-          <p className={styles.form_register}>Nao tem conta? <a href="/createAccount">Registre-se</a></p>
+          <p className={styles.form_register}>Nao tem conta? <Link href="/createAccount"><a>Registre-se</a></Link></p>
           <div className={styles.form_github}>
             <p className={styles.form_github_option}>Ou entre com</p>
             <div className={styles.form_github_button}>
