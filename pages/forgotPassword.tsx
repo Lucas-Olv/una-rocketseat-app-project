@@ -5,7 +5,7 @@ import { Input } from '../src/components/Input';
 import { Button } from '../src/components/Button';
 import styles from '../styles/ForgotPassword.module.scss';
 
-const forgotPassword: NextPage = () => {
+const ForgotPassword: NextPage = () => {
 
   const router = useRouter();
 
@@ -18,7 +18,7 @@ const forgotPassword: NextPage = () => {
       </Head>
 
       <header className={styles.header}>
-        <i className={`${styles.header_icon} + bi bi-arrow-left`} onClick={() => router.back()}></i>
+        <i className={`${styles.header_icon} + bi bi-arrow-left`} ></i>
       </header>
 
       <main className={styles.main}>
@@ -26,7 +26,7 @@ const forgotPassword: NextPage = () => {
           <h2 className={styles.form_title}>Recuperar senha</h2>
           <Input icon="bi bi-envelope-fill" placeholder="Digite seu e-mail" required/>
           <Button >RECUPERAR</Button>
-          <p className={styles.form_return} onClick={() => router.back()}>Voltar</p>
+          <p className={styles.form_return}>Voltar</p>
         </form>
       </main>
 
@@ -34,4 +34,4 @@ const forgotPassword: NextPage = () => {
   )
 }
 
-export default forgotPassword;
+export default ForgotPassword;

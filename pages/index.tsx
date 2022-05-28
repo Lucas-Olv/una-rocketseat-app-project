@@ -19,8 +19,8 @@ const Home: NextPage = () => {
 
       <main className={styles.wrapper}>
         <div className={styles.imageWrapper}>
-          <img className={styles.imageWrapper_fundo} src={fundo.src} alt="" />
-          <img src={logo.src} className={styles.imageWrapper_logo}></img>
+          <img alt="Background" className={styles.imageWrapper_fundo} src={fundo.src} />
+          <img alt="Rocketseat logo" src={logo.src} className={styles.imageWrapper_logo}></img>
           <h1 className={styles.imageWrapper_title}>rocketseat</h1>
         </div>
 
