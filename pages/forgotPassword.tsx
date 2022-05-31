@@ -18,15 +18,15 @@ const ForgotPassword: NextPage = () => {
       </Head>
 
       <header className={styles.header}>
-        <i className={`${styles.header_icon} + bi bi-arrow-left`} ></i>
+        <i className={`${styles.header_icon} + bi bi-arrow-left`} onClick={() => router.back()}></i>
       </header>
 
       <main className={styles.main}>
         <form className={styles.form} action="">
           <h2 className={styles.form_title}>Recuperar senha</h2>
           <Input icon="bi bi-envelope-fill" placeholder="Digite seu e-mail" required/>
-          <Button >RECUPERAR</Button>
-          <p className={styles.form_return}>Voltar</p>
+          <Button onClick={() => router.push("login")}>RECUPERAR</Button>
+          <p className={styles.form_return} onClick={() => router.back()}>Voltar</p>
         </form>
       </main>
 
